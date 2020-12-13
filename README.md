@@ -4,7 +4,8 @@ A helper userscript which makes the Authorization Page nicer c:
 
 ## Features
 
-- [x] Remove guilds.join scope from authorization
+- [x] Remove `guilds.join` scope from authorization
+- [x] Remove `email` scope from authorization
 - [x] adds `&prompt=none` to skip authorization for application you already authorized once before (disabled by default)
 
 ## Installation
