@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Discord Authorization Page Helper
 // @namespace    https://github.com/DevYukine
-// @version      0.1
+// @version      0.2
 // @description  Makes the authorization page nicer c:
 // @author       DevYukine
 // @match        *://discord.com/oauth2/authorize*
@@ -26,6 +26,10 @@
 				type: 'checkbox',
 				default: true
 			},
+			removeEmailScope: {
+				type: 'checkbox',
+				default: false
+			},
 			skipPromptIfPossible: {
 				type: 'checkbox',
 				default: false
@@ -42,9 +46,16 @@
 
 	let href = location.href;
 
-	if (config.get('removeGuildsJoinScope') && urlParams.get("scope").split(' ').includes('guilds.join')) {
+	const scopes = urlParams.get("scope").split(' ');
+
+	if (config.get('removeGuildsJoinScope') && scopes.includes('guilds.join')) {
 		console.log('found guilds.join scope, removing it');
 		href = href.replace(/guilds.join/, '');
+	}
+
+	if (config.get('removeEmailScope') && scopes.includes('email')) {
+		console.log('found email scope, removing it');
+		href = href.replace(/email/, '');
 	}
 
 	console.log('moving to new domain');
