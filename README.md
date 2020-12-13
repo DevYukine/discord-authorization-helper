@@ -17,3 +17,5 @@ A helper userscript which makes the Authorization Page nicer c:
 	* Safari - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=safari).
 	* Dolphin - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=dolphin).
 	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
+
+2. Go [here](https://github.com/DevYukine/discord-authorization-helper/raw/main/discord-authorization-helper.user.js) and click `install`.
