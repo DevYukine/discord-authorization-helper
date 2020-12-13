@@ -1,1 +1,19 @@
-discord-authorization-helper
+# Discord Authorization Helper
+
+A helper userscript which makes the Authorization Page nicer c:
+
+## Features
+
+- [x] Remove guilds.join scope from authorization
+- [x] adds `&prompt=none` to skip authorization for application you already authorized once before (disabled by default)
+
+## Installation
+
+1. Make sure you have user scripts enabled in your browser (these instructions refer to the latest versions of the browser):
+
+	* Firefox - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=firefox).
+	* Chrome - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=chrome).
+	* Opera - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=opera).
+	* Safari - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=safari).
+	* Dolphin - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=dolphin).
+	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
